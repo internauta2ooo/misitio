@@ -1,0 +1,24 @@
+{
+  "name": "misitio",
+  "version": "1.0.0",
+  "description": "Lol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/internauta2ooo/misitio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/internauta2ooo/misitio/issues"
+  },
+  "homepage": "https://github.com/internauta2ooo/misitio#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
+}
