@@ -1,79 +1,262 @@
-<html lang="en">
-    <div id="inicio"></div>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" id="inicio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi sitio personal Eduardo</title>
     <!-- Bootstrap-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles templete-->
-    <link href="css/full-width-pics.css" rel="stylesheet">
+    <link href="css/full-width-pics.css" rel="stylesheet" />
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-  <!-- Navbar-->   
-  <nav  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div  class="container">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#inicio">Inicio
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#acerca">Acerca de mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
+    <script src="js/logica.js"></script>
+  </head>
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#inicio"
+                >Inicio
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#acerca">Acerca de mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header
+      id="acerca"
+      class="py-5 bg-image-full"
+      style="background-image: url('img/server2.jpg')"
+    >
+      <img class="img-fluid d-block mx-auto" src="img/blockchain.png" alt="" />
+    </header>
+    <!-- Acerca de mi -->
+    <section class="py-5">
+      <div class="container">
+        <h1>Eduardo Alpide</h1>
+        <p class="lead">Desarrollador Web</p>
+        <p>
+          7 años en el ámbito profesional de tecnologías de la información,
+          apasionado por la computación y la evolución constante de la
+          tecnología, interesado en nuevas tecnologías de desarrollo de
+          software, blockchain y ciberseguridad.
+        </p>
+        <a href="archivos/CV Eduardo Alpide Blancas.pdf" target="_blank"
+          >Aqui puedes ver mi resumen de vida o curriculum a detalle.</a
+        >
+      </div>
+    </section>
+    <div
+      class="py-3 bg-image-full"
+      style="background-image: url('https://unsplash.it/1900/1080?image=1076')"
+      id="herramientas"
+    >
+      <div class="container" id="contenedorherramientas">
+        <div class="fondotextoimagenes">
+          <p class="lead" id="textoimagenes">Herramientas mas utilizadas</p>
+        </div>
+      </div>
+
+      <div style="height: 200px" id="contenedorherramientas">
+        <img
+          class="imagenherramientas"
+          data-toggle="tooltip"
+          src="img/php.png"
+          title="php"
+          alt=""
+        />
+
+        <img
+          class="imagenherramientas"
+          data-toggle="tooltip"
+          src="img/java.png"
+          title="java"
+          alt=""
+        />
+        <img
+          class="imagenherramientas"
+          data-toggle="tooltip"
+          src="img/mysql.png"
+          title="mysql"
+          alt=""
+        />
+        <img
+          class="imagenherramientas"
+          data-toggle="tooltip"
+          src="img/githubcolor.png"
+          title="git"
+          alt=""
+        />
+        <img
+          class="imagenherramientas"
+          data-toggle="tooltip"
+          src="img/springboot.png"
+          title="spring boot"
+          alt=""
+        />
+        <img
+          class="imagenherramientas"
+          data-toggle="tooltip"
+          src="img/laravel.png"
+          title="laravel"
+          alt=""
+        />
       </div>
     </div>
-  </nav>
-     <!-- Header - set the background image for the header in the line below -->
-  <header  class="py-5 bg-image-full" style="background-image: url('img/server2.jpg');">
-    <img class="img-fluid d-block mx-auto" src="img/blockchain.png" alt="">
-  </header>
-  <!-- Content section -->
-  <section class="py-5">
-    <div id="acerca" class="container">
-      <h1>Eduardo Alpide</h1>
-      <p class="lead">Desarrollador Web</p>
-      <p>7 años en el ámbito profesional de tecnologías de la información, apasionado por la computación y la evolución constante de la tecnología, interesado en nuevas tecnologías de desarrollo de software, blockchain y ciberseguridad</p>
-    </div>
-  </section>   
-  <div class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 200px;"></div>
-  </div>
-  <!-- Content section -->
-  <section class="py-5">
-    <div id="servicios" class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-</body>
+    <!-- Servicios -->
+    <section class="py-5">
+      <div id="servicios" class="container">
+        <h1>Servicios como freelancer</h1>
+        <p class="lead">
+          Integración API Mercado Libre | Graficas con Chart Js | Programacion
+          Web con Laravel, Spring Boot y Vue Js | Reparar Bugs
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div id="contenedorcontacto">
+          <a href="https://github.com/internauta2ooo" target="_black">
+            <img
+              src="img/github.png"
+              title="github"
+              alt=""
+              width="40px"
+              height="40px"
+              data-toggle="tooltip"
+            />
+          </a>
+          <a href="https://www.instagram.com/gentlelife735/" target="_black">
+            <img
+              src="img/instragram.png"
+              title="instagram"
+              alt=""
+              width="40px"
+              height="40px"
+              data-toggle="tooltip"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/eduardo-alpide-blancas-4238b8161/"
+            target="_black"
+          >
+            <img
+              src="img/linkedin.png"
+              title="linkedin"
+              alt=""
+              width="40px"
+              height="40px"
+              data-toggle="tooltip"
+            />
+          </a>
+          <a href="archivos/CV Eduardo Alpide Blancas.pdf" target="_black">
+            <img
+              src="img/cv.png"
+              title="curriculum"
+              alt=""
+              width="40px"
+              height="40px"
+              data-toggle="tooltip"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
 <style>
-    html {
-  scroll-behavior: smooth;
-}
+  #textoimagenes {
+    margin: 10px;
+    text-align: center;
+  }
+  .fondotextoimagenes {
+    width: 300px;
+
+    background-color: rgba(255, 255, 255, 0.925);
+    border-radius: 5px;
+  }
+  #herramientas {
+    justify-content: center;
+  }
+  .imagenherramientas {
+    height: 75px;
+    width: 75px;
+    padding: 5px;
+  }
+  #contenedorherramientas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #contenedorherramientas .imagenherramientas {
+    transition: 0.5s;
+  }
+  #contenedorherramientas .imagenherramientas:hover {
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+    transform: translateX(1px);
+  }
+  .carousel {
+    background-color: black;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  #contenedorcontacto {
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .github {
+    image-rendering: url("img/github.png");
+    display: block;
+  }
+  .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+  }
+  #imagen {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+  @media only screen and (max-width: 600px) {
+    .imagenherramientas {
+      height: 65px;
+      width: 65px;
+      padding: 5px;
+    }
+  }
 </style>
