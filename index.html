@@ -10,6 +10,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/logica.js"></script>
+    <script src="node_modules/node-mandrill/mandrill.js"></script>
   </head>
   <body>
     <!-- Navbar-->
@@ -103,7 +104,7 @@
           class="imagenherramientas"
           data-toggle="tooltip"
           src="img/js.png"
-          title="java"
+          title="javascript"
           alt=""
         />
         <img
@@ -124,7 +125,7 @@
           class="imagenherramientas"
           data-toggle="tooltip"
           src="img/vuejs.png"
-          title="laravel"
+          title="vuejs"
           alt=""
         />
         <img
@@ -146,10 +147,11 @@
     <!-- Servicios -->
     <section class="py-5">
       <div id="servicios" class="container">
-        <h1>Servicios como freelancer</h1>
+        <h1>Servicios</h1>
         <p class="lead">
-          Integración API Mercado Libre | Integración de PACs para facturación
-          |Graficas con Chart Js | Programacion Web con Laravel, Spring Boot y
+          Creacion paginas web y blogs | Integración API de terceros como
+          Mercado Libre, Sugar CRM | Integración de PACs para facturación |
+          Graficas con Chart Js | Programacion web con Laravel, Spring Boot y
           Vue Js | Reparar Bugs
         </p>
       </div>
@@ -211,11 +213,47 @@
               data-toggle="tooltip"
             />
           </a>
+          <!-- <a onclick="ejecutar()">
+            <img
+              src="img/whatsapp.png"
+              title="whatsapp"
+              alt=""
+              width="40px"
+              height="40px"
+              data-toggle="tooltip"
+            />
+          </a> -->
         </div>
       </div>
     </footer>
   </body>
 </html>
+<script>
+  var mandrill = require("node-mandrill")(
+    "073cf396c0ca0332d7b55523142f5856-us7"
+  );
+  function ejecutar() {
+    console.log("ejecutar mandril");
+    //send an e-mail to jim rubenstein
+    mandrill(
+      "/messages/send",
+      {
+        message: {
+          to: [{ email: "gentlelif3@outlook.com", name: "Eduardo" }],
+          from_email: "gentlelif3@outlook.com",
+          subject: "slslsl",
+          text: "Hello, I sent this message using mandrill.",
+        },
+      },
+      function (error, response) {
+        //uh oh, there was an error
+        if (error) console.log(JSON.stringify(error));
+        //everything's good, lets see what mandrill said
+        else console.log(response);
+      }
+    );
+  }
+</script>
 <style>
   #textoimagenes {
     margin: 10px;

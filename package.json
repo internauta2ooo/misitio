@@ -19,7 +19,8 @@
   "homepage": "https://github.com/internauta2ooo/misitio#readme",
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "node-mandrill": "^1.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13"
