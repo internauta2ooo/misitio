@@ -1,0 +1,13 @@
+{
+    "name": "gentl/misitio",
+    "authors": [
+        {
+            "name": "eduardo",
+            "email": "eduardo@eduardo.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^4.5",
+        "components/jquery": "^3.5"
+    }
+}
